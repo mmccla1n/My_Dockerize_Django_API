@@ -1,0 +1,39 @@
+Reviewing the readme
+    - Researching what gunicorn is
+
+- Installing gunicorn, via pip
+- Updating requirements.txt
+- Creating Dockerfile
+    - reviewing Django Gunicorn documentation
+        https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
+        https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/gunicorn/
+
+- Executing cmd and output
+    docker-compose --verbose up -d --build 
+
+- Entered docker container and validated, build is correct
+    docker ps
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS          PORTS                    NAMES
+6197477c2bb3   my_dockerize_django_api-api   "/bin/sh -c 'gunicor…"   20 minutes ago   Up 20 minutes   0.0.0.0:8001->8000/tcp   my_dockerize_django_api-api-1
+(show_n_tell) ➜  My_Dockerize_Django_API git:(mmc_br/dockerize_django_api) ✗ docker exec -it 619 bash
+root@6197477c2bb3:/src# ls
+ Dockerfile     api_show_tell_project             db.sqlite3         dev_run.py           dog_api_call_no_key_proof.pdf   requirements.txt
+'README 2.md'   chuck_norris_api_app             'dev_notes 2.txt'   docker-compose.yml   dog_api_render_proof.pdf        show_n_tell
+ README.md      chuck_norris_joke_api_proof.pdf   dev_notes.txt      dog_api_app          manage.py
+
+ - Validated broswer output using endpoints
+    http://localhost:8001/api/v1/chuck_norris_joke/
+    http://localhost:8001/api/v1/dog_image/
+    
+
+
+
+
+
+
+
+
+
+Reminders
+http://127.0.0.1:8000/api/v1/dog_image/
+http://127.0.0.1:8000/api/v1/chuck_norris_joke/
