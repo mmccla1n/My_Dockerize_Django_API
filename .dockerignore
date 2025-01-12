@@ -1,0 +1,43 @@
+# Exclude Git metadata
+.git
+.gitignore
+
+# Exclude environment files and secrets
+.env
+*.env
+
+# Exclude compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Exclude virtual environments
+venv/
+env/
+*.venv
+show_n_tell/
+
+# Exclude logs and runtime files
+*.log
+*.pid
+*.seed
+*.bak
+*.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude build and artifact files
+dist/
+build/
+*.egg-info/
+*.tar.gz
+*.whl
+
+# Project-specific exclusions
+/api_show_tell_project/__pycache__/
+/chuck_norris_api_app/__pycache__/

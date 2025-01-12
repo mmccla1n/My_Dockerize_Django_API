@@ -1,0 +1,63 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# Virtual environment and dependencies
+show_n_tell/
+show_n_tell/bin/
+show_n_tell/include/
+show_n_tell/lib/
+show_n_tell/lib64/
+show_n_tell/share/
+show_n_tell/*.egg-info/
+show_n_tell/pyvenv.cfg
+
+# Environment variables and secrets
+.env
+*.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.bak
+*.old
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.pycoverage
+.cache
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+*.tar.gz
+*.whl
+
+# Docker-specific ignores
+docker-compose.override.yml
+volumes/
+db_data/
+
+# Project-specific
+/api_show_tell_project/__pycache__/
+/chuck_norris_api_app/__pycache__/
+/mnt/data/
