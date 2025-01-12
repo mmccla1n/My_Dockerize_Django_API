@@ -25,6 +25,11 @@ root@6197477c2bb3:/src# ls
     http://localhost:8001/api/v1/chuck_norris_joke/
     http://localhost:8001/api/v1/dog_image/
     
+- tagging docker image
+- pushed to docker hub
+- Image name.. mmccla1n/docker_django_gunicorn_api_app
+
+
 
 
 
