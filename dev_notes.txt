@@ -29,6 +29,13 @@ root@6197477c2bb3:/src# ls
 - pushed to docker hub
 - Image name.. mmccla1n/docker_django_gunicorn_api_app
 
+- Preparing to Deploying to AWS
+    - Setting up and configuring EC2 insance
+    - Configuring ALLOWED_HOST in settings.py, to use EC2 instance
+    - Connecting to EC2 instance
+        - Insrtalling Docker, gti and docker compose for EC2 instance
+
+
 
 
 
